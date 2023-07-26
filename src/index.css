@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+:root {
+  --white-color: #f5f5f5;
+  --purple-color: #2F234F;
+  --light-purple-color: #7F57F1;
+}
+
+body {
+  background-image: url('/marek-piwnicki-xfixPcc5aOE-unsplash.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100vh;
+
+  display: grid;
+  place-items: center;
+}
+
+.container {
+  /* height: 550px; */
+  padding: 2rem;
+  width: 400px;
+  /* border-radius: 0.5rem; */
+  background-color: var(--white-color);
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* padding: 2rem 0; */
+  /* height: 100px; */
+  /* width: 90%; */
+  margin: 0 auto;
+  border-bottom: 1px solid #ddd;
+}
+
+.logo-container > a {
+  width: 180px;
+  margin-bottom: 1rem;
+}
+
+.text-container {
+  /* width: 90%; */
+  text-align: center;
+  margin: 2rem auto;
+}
+
+.text-container > h2 {
+  margin-bottom: 0.5rem;
+  color: #333333;
+  font-weight: 700;
+}
+
+.text-container > p {
+  color: #444444
+}
+
+form {
+  /* width: 90%; */
+  margin: 0 auto;
+}
+
+.column_form {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+}
+
+input {
+  height: 30px;
+  border: 1px solid #bbb;
+  border-radius: 3px;
+  padding: 0 0.25rem;
+  outline: none;
+}
+
+label {
+  margin-bottom: 0.25rem;
+  color: #555555;
+}
+
+.row_form {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.85rem;
+}
+
+.row_form > span {
+  display: flex;
+  align-items: center;
+  
+}
+
+.row_form > span > label {
+  margin-bottom: 0;
+  /* font-size: 0.85rem; */
+  margin-left: 0.25rem;
+}
+
+button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+  width: 100%;
+  padding: 0.75rem;
+
+  /* background-color: #2F234F;
+  border: none;
+  color: #f5f5f5; */
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.btn_full {
+  margin: 2rem auto 1rem;
+  background-color: #2F234F;
+  border: 1px solid #2F234F;
+  color: #f5f5f5;
+}
+
+.btn_clear {
+  background-color: transparent;
+  color: #2F234F;
+  border: 1px solid #2F234F;
+}
+
+
+.btn_full:hover {
+  transition: 0.25s;
+  background-color: transparent;
+  color: #2F234F;
+  border: 1px solid #2F234F;
+}
+
+.btn_clear:hover {
+  transition: 0.25s;
+  background-color: #2F234F;
+  /* border: 1px solid #2F234F; */
+  color: #f5f5f5;
+}

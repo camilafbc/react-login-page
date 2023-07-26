@@ -1,0 +1,43 @@
+form {
+    /* width: 90%; */
+    margin: 0 auto;
+  }
+  
+  .column_form {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+  }
+  
+  input {
+    height: 30px;
+    border: 1px solid #bbb;
+    border-radius: 3px;
+    padding: 0 0.25rem;
+    outline: none;
+  }
+  
+  label {
+    margin-bottom: 0.25rem;
+    color: #555555;
+  }
+  
+  .row_form {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.85rem;
+  }
+  
+  .row_form > span {
+    display: flex;
+    align-items: center;
+    
+  }
+  
+  .row_form > span > label {
+    margin-bottom: 0;
+    /* font-size: 0.85rem; */
+    margin-left: 0.25rem;
+  }
