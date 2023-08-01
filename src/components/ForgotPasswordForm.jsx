@@ -1,22 +1,30 @@
+import { useNavigate } from "react-router-dom"
+import Button from "./Button"
+
 function ForgotPasswordForm(){
+
+    const navigate = useNavigate()
+
+    const handleHome = () => {
+        navigate('/')
+    }
+
     return (
         <form>
-            <div className="column_form">
-                <label htmlFor="email">E-mail:</label>
-                <input type="email" name="email" id="email" />
+            <div className="column_form forgot_form">
+                {/* <label htmlFor="email">E-mail:</label> */}
+                <input type="email" name="email" id="email" placeholder="seuemail@email.com" />
             </div>
-            {/* <div className="column_form">
-                <label htmlFor="password">Senha:</label>
-                <input type="password" name="password" id="password" />
-            </div>
-            <div className="row_form">
-                <span>
-                    <input type="checkbox" name="remember" id="remember" />
-                    <label htmlFor="remember">Manter conectado</label>
-                </span>
-                <Link to="forgotPassword">Esqueceu sua senha?</Link>
-            </div> */}
-            <button className="login_btn">ENVIAR</button>
+            <Button 
+                btnText="ENVIAR"
+                className="btn_full"
+                onClick={(ev) => ev.preventDefault()}
+            />
+            <Button 
+                btnText="VOLTAR"
+                className="btn_clear"
+                onClick={handleHome}
+            />
         </form>
     )
 }

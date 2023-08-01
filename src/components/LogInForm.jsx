@@ -1,7 +1,15 @@
-import { Link } from "react-router-dom"
+import { Link, useNavigate } from "react-router-dom"
 import Button from "./Button"
 
 function LogInForm(){
+
+    const navigate = useNavigate()
+
+    const handleSignUp = () => {
+        navigate('signUp')
+    }
+
+
     return(
 
         <form>
@@ -20,11 +28,15 @@ function LogInForm(){
                 </span>
                 <Link to="forgotPassword">Esqueceu sua senha?</Link>
             </div>
-            <button className="btn_full">ENTRAR</button>
+            <Button
+                btnText="ENTRAR"
+                className="btn_full"
+                onClick={(ev) => ev.preventDefault()}
+            />
             <Button 
-                LinkTo="signUp"
-                className="btn_clear"
                 btnText="CRIAR NOVA CONTA"
+                className="btn_clear"
+                onClick={handleSignUp}
             />
         </form>
 

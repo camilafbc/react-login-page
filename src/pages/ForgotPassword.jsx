@@ -6,7 +6,7 @@ function ForgotPassword(){
         <Layout>
             <div className="text-container">
                 <h2>Recuperar Senha</h2>
-                <p>Informe o e-mail cadastrado e enviaremos um link para recuperar a senha.</p>
+                <p>Informe o e-mail cadastrado para receber o link de redefinição de senha.</p>
             </div>
             <ForgotPasswordForm />
         </Layout>

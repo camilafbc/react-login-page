@@ -6,7 +6,7 @@ function SignUp(){
         <Layout>
             <div className="text-container">
                 <h2>Criar Conta</h2>
-                <p>Informe um e-mail e crie uma senha para se cadastrar!</p>
+                {/* <p>Informe um e-mail e crie uma senha para se cadastrar!</p> */}
             </div>
             <SignUpForm />
         </Layout>

@@ -9,7 +9,7 @@ function Home(){
         <Layout>
             <div className="text-container">
                 <h2>Bem-vindo!</h2>
-                <p>Informe seu e-mail e senha cadastrados para acessar o conteúdo.</p>
+                {/* <p>Informe o e-mail e senha cadastrados para acessar o conteúdo.</p> */}
             </div>
             <LogInForm />
         </Layout>
