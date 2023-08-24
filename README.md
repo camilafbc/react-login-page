@@ -1,10 +1,12 @@
 # 💻 Página de Login
 
 <div align="center">
-   <img width="80%" src="https://github.com/camilafbc/react-login-page/blob/main/to-readme.gif?raw=true" />
+   <img width="100%" src="https://github.com/camilafbc/react-login-page/blob/main/to-readme.gif?raw=true" />
 </div>
 
 Este é um projeto de página de login desenvolvido para praticar os conceitos de criação de rotas com o `react-router-dom` e o compartilhamento de layout entre essas rotas. A página oferece funcionalidades de login, criação de nova conta e recuperação de senha.
+
+O resultado pode ser visto aqui 👉 https://react-login-page-eight.vercel.app/
 
 ## Visão Geral
 
